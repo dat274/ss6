@@ -1,0 +1,54 @@
+.container {
+   display: flex; 
+}
+.content1 {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    background-color: white;
+    width: 24%;
+    margin: 10px;
+    overflow: hidden;
+}
+.contenttop img {
+    width: 100%;
+    height: 40%;
+}
+.contenttop h3 {
+    font-size: 15px;
+    text-align: center;
+}
+.contentbot {
+    display: flex;
+}
+.contentbot img{
+   margin-left: 15px;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.tennguoidung {
+    margin-left: 20px;
+    font-size: 12px;
+}
+.tennguoidung ion-icon {
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px gray;
+    align-items: center;
+    padding: 20px 5px;
+}
+.menu{
+    background-color: orange;
+    border-radius: 10px;  
+    padding: 3px 15px; 
+}
+.watching {
+    font-size: 12px;
+}
+
