@@ -1,24 +1,33 @@
 .container {
    display: flex; 
+   flex-wrap: wrap;
+   margin-left: -30px;
 }
 .content1 {
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px lightgrey;
     background-color: white;
-    width: 24%;
-    margin: 10px;
     overflow: hidden;
+    flex-direction: column;
+    width: calc(25% - 30px);
+    margin-left: 30px;
 }
 .contenttop img {
     width: 100%;
-    height: 40%;
+    flex-shrink: 0;
 }
 .contenttop h3 {
     font-size: 15px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    word-break: break-all;
+    margin: 10px;
 }
 .contentbot {
     display: flex;
+    flex-shrink: 0;
 }
 .contentbot img{
    margin-left: 15px;
@@ -26,6 +35,8 @@
     aspect-ratio: 1;
     border-radius: 50%;
     margin-top: 5px;
+    flex-shrink: 0;
+    object-fit: cover;
 }
 .tennguoidung {
     margin-left: 20px;
@@ -42,6 +53,7 @@
     border-top: solid 1px gray;
     align-items: center;
     padding: 20px 5px;
+    flex-shrink: 0;
 }
 .menu{
     background-color: orange;
@@ -51,4 +63,6 @@
 .watching {
     font-size: 12px;
 }
-
+@media screen and (max-width: 900px){
+    
+}
