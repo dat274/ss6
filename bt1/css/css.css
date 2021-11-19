@@ -5,29 +5,30 @@
 }
 .content1 {
     border-radius: 20px;
+    display: flex;
     box-shadow: 2px 2px 2px 2px lightgrey;
     background-color: white;
     overflow: hidden;
     flex-direction: column;
     width: calc(25% - 30px);
     margin-left: 30px;
+    /* Vì sao thêm 2 lệnh display flex và flex direction:column nó mới chạy được */
 }
-.contenttop img {
+.content1 img {
     width: 100%;
     flex-shrink: 0;
 }
-.contenttop h3 {
-    font-size: 15px;
-    text-align: center;
+.content1 h3 {
     display: flex;
     flex-direction: column;
     flex: 1;
+    font-size: 15px;
+    text-align: center;
     word-break: break-all;
     margin: 10px;
 }
 .contentbot {
     display: flex;
-    flex-shrink: 0;
 }
 .contentbot img{
    margin-left: 15px;
@@ -41,6 +42,7 @@
 .tennguoidung {
     margin-left: 20px;
     font-size: 12px;
+    flex-shrink: 0;
 }
 .tennguoidung ion-icon {
     background-color: blue;
@@ -63,6 +65,21 @@
 .watching {
     font-size: 12px;
 }
-@media screen and (max-width: 900px){
-    
+@media screen and (max-width: 800px){
+    .content1{
+        width: calc(50% - 30px);
+        margin-bottom: 20px;
+    }
+    .content1 h3{
+        font-size: 150%;
+    }
+}
+@media screen and (max-width: 400px){
+    .content1{
+        width: calc(100% - 30px);
+        margin-bottom: 20px;
+    }
+    .content1 h3{
+        font-size: 200%;
+    }
 }
